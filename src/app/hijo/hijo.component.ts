@@ -9,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class HijoComponent {
 
+  contador: number = 0
+
+  constructor() {
+
+  }
+
+  /**
+   * incrementarContador
+   */
+  public incrementarContador() {
+
+    this.contador++
+    
+  }
+
 }
