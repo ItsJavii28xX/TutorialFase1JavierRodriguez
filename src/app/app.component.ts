@@ -10,5 +10,20 @@ import { HijoComponent } from "./hijo/hijo.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  
   title = 'Prueba';
+  visibilidad:Boolean = true;
+
+  constructor() {
+
+  }
+
+  public ocultarMostrar() {
+    if(this.visibilidad) {
+      this.visibilidad=false;
+    } else {
+      this.visibilidad=true;
+    }
+  }
+
 }
