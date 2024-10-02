@@ -1,29 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HijoComponent } from "./hijo/hijo.component";
+import { JokeListComponent } from './joke-list/joke-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HijoComponent],
+  imports: [RouterOutlet, JokeListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   
-  title = 'Prueba';
-  visibilidad:Boolean = true;
-
-  constructor() {
-
-  }
-
-  public ocultarMostrar() {
-    if(this.visibilidad) {
-      this.visibilidad=false;
-    } else {
-      this.visibilidad=true;
-    }
-  }
 
 }
